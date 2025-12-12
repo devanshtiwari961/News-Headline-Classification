@@ -75,7 +75,7 @@ def get_zs_classifier():
 # Avoid Streamlit secrets when not configured; fall back to env var or default
 backend_url = os.environ.get("BACKEND_URL", "http://127.0.0.1:8000/predict")
 
-st.caption(f"Backend URL: {backend_url}")
+# st.caption(f"Backend URL: {backend_url}")
 
 use_local = st.checkbox("Run model inside this app (recommended for Streamlit Cloud)", value=True)
 
